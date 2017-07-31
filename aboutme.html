@@ -7,7 +7,7 @@
 
 	<h1 style="color:rgb(255,215,51); font-family:century gothic;">CLAIRE FURTICK</h1>
     <br/>
-    <h2 onmouseover="aboutMeText()" style="background-color:rgb(139,92,255); color:white;">About Me</h2>
+    <h2 onmouseover="aboutMeText()" onmouseout="aboutMeHide()" style="background-color:rgb(139,92,255); color:white;">About Me</h2>
     <h2 style="background-color:rgb(139,92,255); color:white;">My Projects</h2>
     <h2 style="background-color:rgb(139,92,255); color:white;">Contact Me</h2>
     <br/>
@@ -20,7 +20,12 @@ var x
       x = "I am going to be a senior at Nathan Hale High School and I love to learn how to code! I play soccer, gymnastics, and softball for my school. Outside of that, I love to hike, go for runs with my dad, cook with my mom, do fun art projects, and go on adventures with my friends. I have an older sister named Natalie who is going to University of Colorado next year, a dog named Ross, and a cat named Mona. I am not pursuing photography but I absolutely love to take photos of everything."
       return document.getElementById("vary").innerHTML = x;
   }
- 
+  
+  function aboutMeHide() {
+  
+  x = " "
+  return document.getElementById("vary").innerHTML = x;
+ }
   </script>
 
   </body>
